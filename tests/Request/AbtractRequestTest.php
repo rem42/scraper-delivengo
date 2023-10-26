@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Scraper\ScraperTmdb\Tests\Request;
 
@@ -19,7 +19,8 @@ abstract class AbtractRequestTest extends TestCase
     {
         $this->responseInterface = $this->createMock(ResponseInterface::class);
         $this->responseInterface
-            ->method('getStatusCode')->willReturn(200);
+            ->method('getStatusCode')->willReturn(200)
+        ;
         $this->responseInterface
             ->method('getContent')->willReturn(file_get_contents(__DIR__ . '/../fixtures/' . $fixture))
         ;

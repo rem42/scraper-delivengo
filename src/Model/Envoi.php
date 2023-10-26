@@ -1,8 +1,8 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
 class Envoi
 {
-    public ?Data $data = null;
+    public ?DataEnvoi $data = null;
 }

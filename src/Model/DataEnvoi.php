@@ -1,8 +1,8 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
-class Data
+class DataEnvoi
 {
     public ?int $idSupport = null;
     public ?string $descriptif = null;
