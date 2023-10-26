@@ -4,5 +4,16 @@ namespace Scraper\ScraperDelivengo\Model;
 
 class Extra
 {
-    public ?Module $module = null;
+    private ?Module $module = null;
+
+    public function getModule(): ?Module
+    {
+        return $this->module;
+    }
+
+    public function setModule(?Module $module): self
+    {
+        $this->module = $module;
+        return $this;
+    }
 }

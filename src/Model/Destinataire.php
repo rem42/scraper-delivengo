@@ -2,13 +2,18 @@
 
 namespace Scraper\ScraperDelivengo\Model;
 
-class Destinataire
+class Destinataire extends Expediteur
 {
-    public ?string $raisonSociale = null;
-    public ?string $nom = null;
-    public ?string $complementVoie = null;
-    public ?string $voie = null;
-    public ?string $boitePostale = null;
-    public ?string $codePostalCommune = null;
-    public ?string $pays = null;
+    private ?string $pays = null;
+
+    public function getPays(): ?string
+    {
+        return $this->pays;
+    }
+
+    public function setPays(?string $pays): self
+    {
+        $this->pays = $pays;
+        return $this;
+    }
 }
