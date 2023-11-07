@@ -4,5 +4,16 @@ namespace Scraper\ScraperDelivengo\Model;
 
 class Envoi
 {
-    public ?DataEnvoi $data = null;
+    private ?DataEnvoi $data = null;
+
+    public function getData(): ?DataEnvoi
+    {
+        return $this->data;
+    }
+
+    public function setData(?DataEnvoi $data): self
+    {
+        $this->data = $data;
+        return $this;
+    }
 }
