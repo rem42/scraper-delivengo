@@ -4,12 +4,12 @@ namespace Scraper\ScraperDelivengo\Model;
 
 class DocumentsDouanier
 {
-    public const DELIVENGO_GIFT = 1;
-    public const DELIVENGO_DOCUMENT = 2;
-    public const DELIVENGO_COMMERCIAL_SAMPLE = 3;
-    public const DELIVENGO_MERCHANDISE_RETURN = 4;
-    public const DELIVENGO_OTHER = 5;
-    public const DELIVENGO_COMMERCIAL = 6;
+    public const GIFT = 1;
+    public const DOCUMENT = 2;
+    public const COMMERCIAL_SAMPLE = 3;
+    public const MERCHANDISE_RETURN = 4;
+    public const OTHER = 5;
+    public const COMMERCIAL = 6;
 
     /** @var array<int, int> */
     private array $envoiNature = [];
