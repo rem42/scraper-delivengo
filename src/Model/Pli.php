@@ -6,6 +6,7 @@ class Pli
 {
     private ?Expediteur $expediteur = null;
     private ?Destinataire $destinataire = null;
+    private ?string $expediteurEmail = null;
     private ?string $expediteurTelephone = null;
     private ?string $destinataireEmail = null;
     private ?string $destinataireTelephone = null;
@@ -33,6 +34,17 @@ class Pli
     public function setDestinataire(?Destinataire $destinataire): self
     {
         $this->destinataire = $destinataire;
+        return $this;
+    }
+
+    public function getExpediteurEmail(): ?string
+    {
+        return $this->expediteurEmail;
+    }
+
+    public function setExpediteurEmail(?string $expediteurEmail): self
+    {
+        $this->expediteurEmail = $expediteurEmail;
         return $this;
     }
 
