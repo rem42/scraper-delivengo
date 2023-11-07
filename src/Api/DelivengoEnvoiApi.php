@@ -9,7 +9,7 @@ class DelivengoEnvoiApi extends DelivengoApi
 {
     public function execute(): array|bool|object|string
     {
-        if (200 === $this->response->getStatusCode()) {
+        if ($this->response->getStatusCode() >= 200 && $this->response->getStatusCode() < 300) {
             return $this->serializer->deserialize(
                 $this->response->getContent(),
                 EnvoiResponse::class,
