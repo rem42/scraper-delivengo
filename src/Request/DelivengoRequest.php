@@ -5,11 +5,12 @@ namespace Scraper\ScraperDelivengo\Request;
 use Scraper\Scraper\Attribute\Method;
 use Scraper\Scraper\Attribute\Scheme;
 use Scraper\Scraper\Attribute\Scraper;
+use Scraper\Scraper\Request\RequestException;
 use Scraper\Scraper\Request\RequestHeaders;
 use Scraper\Scraper\Request\ScraperRequest;
 
 #[Scraper(method: Method::GET, scheme: Scheme::HTTPS, host: 'mydelivengo.laposte.fr', path: '/api/v{version}')]
-abstract class DelivengoRequest extends ScraperRequest implements RequestHeaders
+abstract class DelivengoRequest extends ScraperRequest implements RequestHeaders, RequestException
 {
     public const ACCEPT_PDF = 'application/pdf';
     public const ACCEPT_ZPL = 'application/zpl';
@@ -37,6 +38,11 @@ abstract class DelivengoRequest extends ScraperRequest implements RequestHeaders
         }
 
         return $headers;
+    }
+
+    public function isThrow(): bool
+    {
+        return false;
     }
 
     public function getVersion(): string
