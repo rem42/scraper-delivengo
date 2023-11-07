@@ -6,7 +6,7 @@ use Scraper\Scraper\Attribute\Method;
 use Scraper\Scraper\Attribute\Scraper;
 use Scraper\Scraper\Request\RequestBody;
 use Scraper\Scraper\Request\RequestQuery;
-use Scraper\ScraperColissimo\Factory\SerializerFactory;
+use Scraper\Scraper\Factory\SerializerFactory;
 use Scraper\ScraperDelivengo\Model\Envoi;
 
 #[Scraper(method: Method::POST, path: 'envois')]
