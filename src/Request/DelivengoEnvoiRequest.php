@@ -7,12 +7,12 @@ use Scraper\Scraper\Attribute\Scraper;
 use Scraper\Scraper\Request\RequestBody;
 use Scraper\Scraper\Request\RequestQuery;
 use Scraper\ScraperColissimo\Factory\SerializerFactory;
-use Scraper\ScraperDelivengo\Model\DataEnvoi;
+use Scraper\ScraperDelivengo\Model\Envoi;
 
 #[Scraper(method: Method::POST, path: 'envois')]
 class DelivengoEnvoiRequest extends DelivengoRequest implements RequestQuery, RequestBody
 {
-    private DataEnvoi $dataEnvoi;
+    private Envoi $envoi;
 
     public function __construct(
         string $apiKey,
@@ -35,16 +35,16 @@ class DelivengoEnvoiRequest extends DelivengoRequest implements RequestQuery, Re
         ]);
     }
 
-    public function setDataEnvoi(DataEnvoi $dataEnvoi): self
+    public function setEnvoi(Envoi $envoi): self
     {
-        $this->dataEnvoi = $dataEnvoi;
+        $this->envoi = $envoi;
         return $this;
     }
 
     public function getBody()
     {
         return SerializerFactory::create()
-            ->serialize($this->dataEnvoi, 'json')
+            ->serialize($this->envoi, 'json')
         ;
     }
 }
