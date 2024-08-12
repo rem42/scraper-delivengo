@@ -18,7 +18,7 @@ class DocumentsDouanier
     private ?string $numLicence = null;
     private ?string $numCertificat = null;
     private ?string $numFacture = null;
-    private ?string $fraisPort = null;
+    private ?float $fraisPort = null;
     /** @var array<int, Article> */
     private array $articles = [];
 
@@ -88,12 +88,12 @@ class DocumentsDouanier
         return $this;
     }
 
-    public function getFraisPort(): ?string
+    public function getFraisPort(): ?float
     {
         return $this->fraisPort;
     }
 
-    public function setFraisPort(?string $fraisPort): self
+    public function setFraisPort(?float $fraisPort): self
     {
         $this->fraisPort = $fraisPort;
         return $this;

@@ -5,9 +5,9 @@ namespace Scraper\ScraperDelivengo\Model;
 class Article
 {
     private ?string $descriptionDetaillee = null;
-    private ?string $quantite = null;
+    private ?int $quantite = null;
     private ?float $poids = null;
-    private ?string $valeur = null;
+    private ?float $valeur = null;
     private ?string $paysOrigine = null;
     private ?string $numTarifaire = null;
 
@@ -22,12 +22,12 @@ class Article
         return $this;
     }
 
-    public function getQuantite(): ?string
+    public function getQuantite(): ?int
     {
         return $this->quantite;
     }
 
-    public function setQuantite(?string $quantite): self
+    public function setQuantite(?int $quantite): self
     {
         $this->quantite = $quantite;
         return $this;
@@ -44,12 +44,12 @@ class Article
         return $this;
     }
 
-    public function getValeur(): ?string
+    public function getValeur(): ?float
     {
         return $this->valeur;
     }
 
-    public function setValeur(?string $valeur): self
+    public function setValeur(?float $valeur): self
     {
         $this->valeur = $valeur;
         return $this;
