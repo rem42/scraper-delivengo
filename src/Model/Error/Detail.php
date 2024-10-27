@@ -4,5 +4,5 @@ namespace Scraper\ScraperDelivengo\Model\Error;
 
 class Detail
 {
-    public ?string $errStucture = null;
+    public ?array $data = null;
 }

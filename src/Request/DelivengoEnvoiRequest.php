@@ -16,7 +16,7 @@ class DelivengoEnvoiRequest extends DelivengoRequest implements RequestQuery, Re
 
     public function __construct(
         string $apiKey,
-        string $accept = null,
+        ?string $accept = null,
         private readonly ?int $support = null,
         private readonly ?int $position = null,
         private readonly ?int $imprimerReference = null,
