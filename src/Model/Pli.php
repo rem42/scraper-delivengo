@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -23,6 +25,7 @@ class Pli
     public function setExpediteur(?Expediteur $expediteur): self
     {
         $this->expediteur = $expediteur;
+
         return $this;
     }
 
@@ -34,6 +37,7 @@ class Pli
     public function setDestinataire(?Destinataire $destinataire): self
     {
         $this->destinataire = $destinataire;
+
         return $this;
     }
 
@@ -45,6 +49,7 @@ class Pli
     public function setExpediteurEmail(?string $expediteurEmail): self
     {
         $this->expediteurEmail = $expediteurEmail;
+
         return $this;
     }
 
@@ -56,6 +61,7 @@ class Pli
     public function setExpediteurTelephone(?string $expediteurTelephone): self
     {
         $this->expediteurTelephone = $expediteurTelephone;
+
         return $this;
     }
 
@@ -67,6 +73,7 @@ class Pli
     public function setDestinataireEmail(?string $destinataireEmail): self
     {
         $this->destinataireEmail = $destinataireEmail;
+
         return $this;
     }
 
@@ -78,6 +85,7 @@ class Pli
     public function setDestinataireTelephone(?string $destinataireTelephone): self
     {
         $this->destinataireTelephone = $destinataireTelephone;
+
         return $this;
     }
 
@@ -89,6 +97,7 @@ class Pli
     public function setReference(?string $reference): self
     {
         $this->reference = $reference;
+
         return $this;
     }
 
@@ -100,6 +109,7 @@ class Pli
     public function setOptions(?int $options): self
     {
         $this->options = $options;
+
         return $this;
     }
 
@@ -111,6 +121,7 @@ class Pli
     public function setPoids(?int $poids): self
     {
         $this->poids = $poids;
+
         return $this;
     }
 
@@ -122,6 +133,7 @@ class Pli
     public function setDocumentsDouaniers(?DocumentsDouanier $documentsDouaniers): self
     {
         $this->documentsDouaniers = $documentsDouaniers;
+
         return $this;
     }
 }

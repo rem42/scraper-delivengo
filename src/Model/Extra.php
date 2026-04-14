@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -15,6 +17,7 @@ class Extra
     public function setModule(?Module $module): self
     {
         $this->module = $module;
+
         return $this;
     }
 
@@ -26,6 +29,7 @@ class Extra
     public function setCompte(?Compte $compte): self
     {
         $this->compte = $compte;
+
         return $this;
     }
 }

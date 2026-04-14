@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Request;
 
@@ -38,6 +40,7 @@ class DelivengoEnvoiRequest extends DelivengoRequest implements RequestQuery, Re
     public function setEnvoi(Envoi $envoi): self
     {
         $this->envoi = $envoi;
+
         return $this;
     }
 

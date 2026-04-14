@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -19,6 +21,7 @@ class Article
     public function setDescriptionDetaillee(?string $descriptionDetaillee): self
     {
         $this->descriptionDetaillee = $descriptionDetaillee;
+
         return $this;
     }
 
@@ -30,6 +33,7 @@ class Article
     public function setQuantite(?int $quantite): self
     {
         $this->quantite = $quantite;
+
         return $this;
     }
 
@@ -41,6 +45,7 @@ class Article
     public function setPoids(?float $poids): self
     {
         $this->poids = $poids;
+
         return $this;
     }
 
@@ -52,6 +57,7 @@ class Article
     public function setValeur(?float $valeur): self
     {
         $this->valeur = $valeur;
+
         return $this;
     }
 
@@ -63,6 +69,7 @@ class Article
     public function setPaysOrigine(?string $paysOrigine): self
     {
         $this->paysOrigine = $paysOrigine;
+
         return $this;
     }
 
@@ -74,6 +81,7 @@ class Article
     public function setNumTarifaire(?string $numTarifaire): self
     {
         $this->numTarifaire = $numTarifaire;
+
         return $this;
     }
 }

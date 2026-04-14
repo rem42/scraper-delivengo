@@ -1,10 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
 class DataEnvoiResponse
 {
     public ?int $id = null;
+
     /** @var array<int, PliEnvoiResponse> */
     public array $plis = [];
     public ?string $documentsSupports = null;
@@ -13,6 +16,7 @@ class DataEnvoiResponse
     public function addPli(PliEnvoiResponse $pli): self
     {
         $this->plis[] = $pli;
+
         return $this;
     }
 }

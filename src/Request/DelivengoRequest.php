@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Request;
 
@@ -20,7 +22,7 @@ abstract class DelivengoRequest extends ScraperRequest implements RequestHeaders
 
     public function __construct(
         private readonly string $apiKey,
-        private readonly ?string $accept = null
+        private readonly ?string $accept = null,
     ) {}
 
     public function getHeaders(): array
@@ -53,6 +55,7 @@ abstract class DelivengoRequest extends ScraperRequest implements RequestHeaders
     public function setSimulate(bool $simulate): self
     {
         $this->simulate = $simulate;
+
         return $this;
     }
 }

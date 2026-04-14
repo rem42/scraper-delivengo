@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -19,6 +21,7 @@ class Expediteur
     public function setRaisonSociale(?string $raisonSociale): self
     {
         $this->raisonSociale = $raisonSociale;
+
         return $this;
     }
 
@@ -30,6 +33,7 @@ class Expediteur
     public function setNom(?string $nom): self
     {
         $this->nom = $nom;
+
         return $this;
     }
 
@@ -41,6 +45,7 @@ class Expediteur
     public function setComplementVoie(?string $complementVoie): self
     {
         $this->complementVoie = $complementVoie;
+
         return $this;
     }
 
@@ -52,6 +57,7 @@ class Expediteur
     public function setVoie(?string $voie): self
     {
         $this->voie = $voie;
+
         return $this;
     }
 
@@ -63,6 +69,7 @@ class Expediteur
     public function setBoitePostale(?string $boitePostale): self
     {
         $this->boitePostale = $boitePostale;
+
         return $this;
     }
 
@@ -74,6 +81,7 @@ class Expediteur
     public function setCodePostalCommune(?string $codePostalCommune): self
     {
         $this->codePostalCommune = $codePostalCommune;
+
         return $this;
     }
 }

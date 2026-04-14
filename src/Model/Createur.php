@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -14,6 +16,7 @@ class Createur
     public function setNom(?string $nom): self
     {
         $this->nom = $nom;
+
         return $this;
     }
 }

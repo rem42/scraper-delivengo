@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -14,6 +16,7 @@ class Envoi
     public function setData(?DataEnvoi $data): self
     {
         $this->data = $data;
+
         return $this;
     }
 }

@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -19,6 +21,7 @@ class DocumentsDouanier
     private ?string $numCertificat = null;
     private ?string $numFacture = null;
     private ?float $fraisPort = null;
+
     /** @var array<int, Article> */
     private array $articles = [];
 
@@ -30,6 +33,7 @@ class DocumentsDouanier
     public function addEnvoiNature(int $envoiNature): self
     {
         $this->envoiNature[] = $envoiNature;
+
         return $this;
     }
 
@@ -41,6 +45,7 @@ class DocumentsDouanier
     public function setEnvoiCommercial(?int $envoiCommercial): self
     {
         $this->envoiCommercial = $envoiCommercial;
+
         return $this;
     }
 
@@ -52,6 +57,7 @@ class DocumentsDouanier
     public function setObservation(?string $observation): self
     {
         $this->observation = $observation;
+
         return $this;
     }
 
@@ -63,6 +69,7 @@ class DocumentsDouanier
     public function setNumLicence(?string $numLicence): self
     {
         $this->numLicence = $numLicence;
+
         return $this;
     }
 
@@ -74,6 +81,7 @@ class DocumentsDouanier
     public function setNumCertificat(?string $numCertificat): self
     {
         $this->numCertificat = $numCertificat;
+
         return $this;
     }
 
@@ -85,6 +93,7 @@ class DocumentsDouanier
     public function setNumFacture(?string $numFacture): self
     {
         $this->numFacture = $numFacture;
+
         return $this;
     }
 
@@ -96,6 +105,7 @@ class DocumentsDouanier
     public function setFraisPort(?float $fraisPort): self
     {
         $this->fraisPort = $fraisPort;
+
         return $this;
     }
 
@@ -107,6 +117,7 @@ class DocumentsDouanier
     public function addArticle(Article $article): self
     {
         $this->articles[] = $article;
+
         return $this;
     }
 }

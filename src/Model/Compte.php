@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -14,6 +16,7 @@ class Compte
     public function setId(?int $id): self
     {
         $this->id = $id;
+
         return $this;
     }
 }

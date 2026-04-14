@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -7,6 +9,7 @@ class DataEnvoi
     private ?int $idSupport = null;
     private ?string $descriptif = null;
     private ?Extra $extra = null;
+
     /** @var array<int, Pli> */
     private array $plis = [];
 
@@ -18,6 +21,7 @@ class DataEnvoi
     public function setIdSupport(?int $idSupport): self
     {
         $this->idSupport = $idSupport;
+
         return $this;
     }
 
@@ -29,6 +33,7 @@ class DataEnvoi
     public function setDescriptif(?string $descriptif): self
     {
         $this->descriptif = $descriptif;
+
         return $this;
     }
 
@@ -40,6 +45,7 @@ class DataEnvoi
     public function setExtra(?Extra $extra): self
     {
         $this->extra = $extra;
+
         return $this;
     }
 
@@ -51,6 +57,7 @@ class DataEnvoi
     public function addPli(Pli $pli): self
     {
         $this->plis[] = $pli;
+
         return $this;
     }
 }

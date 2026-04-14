@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -16,6 +18,7 @@ class Module
     public function setNom(?string $nom): self
     {
         $this->nom = $nom;
+
         return $this;
     }
 
@@ -27,6 +30,7 @@ class Module
     public function setVersion(?string $version): self
     {
         $this->version = $version;
+
         return $this;
     }
 
@@ -38,6 +42,7 @@ class Module
     public function setCreateur(?Createur $createur): self
     {
         $this->createur = $createur;
+
         return $this;
     }
 }

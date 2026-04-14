@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDelivengo\Model;
 
@@ -15,6 +17,7 @@ class Destinataire extends Expediteur
     public function setPays(?string $pays): self
     {
         $this->pays = $pays;
+
         return $this;
     }
 
@@ -26,6 +29,7 @@ class Destinataire extends Expediteur
     public function setCodePays(?string $codePays): self
     {
         $this->codePays = $codePays;
+
         return $this;
     }
 }
